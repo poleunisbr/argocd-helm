@@ -8,3 +8,9 @@ argo-cd:
   server:
     extraArgs:
       - --insecure
+    admin:
+      password: admin
+    service:
+      type: NodePort
+      nodePorts:
+        http: 30080
